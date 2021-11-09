@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pocket APK</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+		<h1 class="font-weight-bold">POCKET APK</h1>
+	</div>
+</head>
+<body>
+<div class="container px-8 px-lg-8">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+    	<div class="col-lg-8 ">
+		<button data-toggle="collapse" data-target="#awalan">AWALAN</button>
+
+		<div id="awalan" class="collapse">
+			<p id="awalan1">
+			Assalamualaikum kak<br>
+			Salam sehat bahagia <br>
+			Untuk yang mau cemilan <br>
+			Tapi males keluar jauh dan panas <br>
+			Kamilah solusinya <br>
+			Jangan lupa save nomer kami ya kak 
+			</p>
+			<button class="btn btn-md btn-primary ml-3" onclick="copyTeks(awalan1)">Copy</button>
+		</div><br><br>
+
+		<button data-toggle="collapse" data-target="#follow_up">FOLLOW UP</button>
+
+		<div id="follow_up" class="collapse">
+			<p id="follow_up1">
+			Assalamualaikum kak <br>
+			Untuk pesanannya sudah diterima kan kak ?<br>
+			Bagaimana kak untuk acaranya kemarin ? Semoga lancar dan sukses ya <br>
+			Mohon beri penilaian dari angka 1-10 atas pelayanan kami ya kak<br>
+			Agar kami bisa semakin memperbaiki pelayann kami<br>
+			Terimakasih kak<br>
+			Semoga selalu lancar rejekiny
+			</p>
+			<button class="btn btn-md btn-primary ml-3" onclick="copyTeks(follow_up1)">Copy</button>
+		</div><br><br>
+
+		<button data-toggle="collapse" data-target="#harga">HARGA VARIAN REGULAR</button>
+
+		<div id="harga" class="collapse">
+			<p id="harga1">
+			Untuk daftar harga varian regulernya ini ya kak <br>
+			Kakak mau pesan yg mana nih <br>
+			</p>
+			<button class="btn btn-md btn-primary ml-3" onclick="copyTeks(harga1)">Copy</button>
+		</div><br><br>
+
+		<button data-toggle="collapse" data-target="#Format_pesanan">Format Pesanan</button>
+
+		<div id="Format_pesanan" class="collapse">
+			<p id="Format_pesanan1">
+				Untuk pemesanan bisa langsung di isikan dlu ya kak <br>
+				Atas nama : <br>
+				Pesanan : <br>
+				Bentuk : <br>
+				Lilin : <br>
+				Tulisan : <br>
+				Diambil hari dan jam : <br>
+				Kami akan buatkan notanya kak <br>
+				Nanti saat pengambilan bisa langsung menunjukan notanya
+			</p>
+			<button class="btn btn-md btn-primary ml-3" onclick="copyTeks(Format_pesanan1)">Copy</button>
+		</div><br><br>
+
+
+		<button data-toggle="collapse" data-target="#Harga_kue">Harga Kue Ultah</button>
+
+		<div id="Harga_kue" class="collapse">
+			<p id="Harga_kue1">
+				Untuk daftar harga kue ulang tahunnya ini ya kak<br>
+				Silahkan dipilih kak<br>
+			</p>
+			<button class="btn btn-md btn-primary ml-3" onclick="copyTeks(Harga_kue1)">Copy</button>
+		</div><br><br>
+
+		<button data-toggle="collapse" data-target="#Penyimpanan_Desert">Penyimpanan Desert BOX</button>
+
+		<div id="Penyimpanan_Desert" class="collapse">
+			<p id="Penyimpanan_Desert1">
+				Pastikan showcase dalam keadaan dingin dan berada disuhu 8-13°C <br>
+				Pastikan permukaan showcase yang digunakan untuk meletakkan dessert box bersih dan tidak terdapat genangan air <br>
+				Pastikan dessert box langsung masuk ke dalam showcase begitu sampai di rumah • Pastikan dessert box masih tersegel dengan rapi <br>
+				6 hari dalam lemari pendingin / showcase <br>
+				1 hari apabila sudah dibuka dan disuhu ruang
+			</p>
+			<button class="btn btn-md btn-primary ml-3" onclick="copyTeks(Penyimpanan_Desert1)">Copy</button>
+		</div><br><br>
+
+
+
+
+	</div>
+</div>
+</div>
+
+ <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script type="text/javascript">
+    function copyTeks(data){
+		const textArea = document.createElement('textarea');
+		textArea.textContent = data.textContent;
+		document.body.append(textArea);
+		textArea.select();
+        document.execCommand("copy");
+    }
+</script>
+
+</body>
+</html>
